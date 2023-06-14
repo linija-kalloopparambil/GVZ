@@ -19,8 +19,7 @@ namespace Pizza_API.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Diamter = table.Column<int>(type: "int", nullable: false),
-                    LeftOvenAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    ToppingId = table.Column<int>(type: "int", nullable: false)
+                    LeftOvenAt = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {

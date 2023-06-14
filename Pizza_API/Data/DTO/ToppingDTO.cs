@@ -9,7 +9,7 @@ namespace Pizza_API.Data.DTO
 
         [MaxLength(128)]
         public string Description { get; set; }
-      
+
         public int PizzaId { get; set; }
     }
 }

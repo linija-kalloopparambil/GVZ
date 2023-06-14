@@ -8,7 +8,7 @@ namespace Pizza_API.Data.Model
         [Key]
         public int Id { get; set; }
         public string Description { get; set; }
-
+        [NotMapped]
         public int PizzaId { get; set; }
         [NotMapped]
         public Pizza Pizza { get; set; }

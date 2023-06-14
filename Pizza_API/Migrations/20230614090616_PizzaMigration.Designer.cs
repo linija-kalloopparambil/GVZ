@@ -12,7 +12,7 @@ using Pizza_API.Data;
 namespace Pizza_API.Migrations
 {
     [DbContext(typeof(PizzaContext))]
-    [Migration("20230614065003_PizzaMigration")]
+    [Migration("20230614090616_PizzaMigration")]
     partial class PizzaMigration
     {
         /// <inheritdoc />
@@ -42,9 +42,6 @@ namespace Pizza_API.Migrations
 
                     b.Property<DateTime?>("LeftOvenAt")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("ToppingId")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

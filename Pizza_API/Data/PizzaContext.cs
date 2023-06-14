@@ -16,9 +16,10 @@ namespace Pizza_API.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Topping>()
-                .HasOne(_ => _.Pizza)
-                .WithMany(y => y.Toppings)
-                .HasForeignKey(p => p.PizzaId);
+               .HasOne(_ => _.Pizza)
+               .WithMany(y => y.Toppings)
+               .HasForeignKey(p => p.PizzaId);
+
 
         }
     }

@@ -9,7 +9,6 @@ namespace Pizza_API.Data.Model
         public string Description { get; set; }
         public int Diamter { get; set; }
         public DateTime? LeftOvenAt { get; set; }
-        public ICollection<Topping> Toppings { get; set; }
-        public int ToppingId { get; set; }
+        public List<Topping> Toppings { get; set; }
     }
 }

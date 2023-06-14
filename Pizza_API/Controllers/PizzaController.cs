@@ -59,7 +59,7 @@ namespace Pizza_API.Controllers
         public async Task<ActionResult> Delete(int id)
         {
             var pizzaToDelete = await _pizzaContext.Pizzas
-                //.Include(x => x.Toppings)
+                .Include(x => x.Toppings)
                 .Where(y => y.Id == id)
                 .FirstOrDefaultAsync();
 

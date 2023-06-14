@@ -40,9 +40,6 @@ namespace Pizza_API.Migrations
                     b.Property<DateTime?>("LeftOvenAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("ToppingId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.ToTable("Pizzas");
